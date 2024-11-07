@@ -61,7 +61,6 @@ void solve(){
     for(int i=1;i<=1e5;i++) if(dp[i]) ans++;
     cout<<ans<<"\n";
     for(int i=1;i<=1e5;i++) if(dp[i]) cout<<i<<" ";
-
  
     return;
 }
