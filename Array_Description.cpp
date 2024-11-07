@@ -75,18 +75,11 @@ void solve(){
         ans = (ans*tp)%mod;
     }
 
-    /*for(int i=1;i<=n;i++)
-    {
-        for(int j=0;j<k+2;j++) cout<<dp[i][j]<<" ";
-        cout<<"\n";
-    }*/
     ll fg=0;
-    for(int i=1;i<n;i++)
-    {
-        if(l[i]!=0 && l[i+1]!=0 && abs(l[i+1]-l[i])>1) fg=1;
-    }
+    for(int i=1;i<n;i++) if(l[i]!=0 && l[i+1]!=0 && abs(l[i+1]-l[i])>1) fg=1;
+    
     if(fg) ans=0;
-   cout<<ans;
+    cout<<ans;
  
     return;
 }
